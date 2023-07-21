@@ -1,1 +1,17 @@
+Component Design
 
+--- Machine / VM / Server / Cloud --> 
+
+                                      1. s-test-framework.jar
+
+Class Design
+
+--- Class ScreenCapture --> Reads web elements from a screen (Web page)
+                        --> Calls StoreData class to store those elements
+
+--- Class StoreData     --> Receives a JSON of Weblement Data
+                        --> Stores this JSON on any persistent storage
+                        --> Stores this data in an excel
+
+---  Class DataCompare   --> Compares any two 2-dimensional excel tables
+                         --> Captures the differences in an HashMap 
